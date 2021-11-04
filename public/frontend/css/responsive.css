@@ -1,0 +1,137 @@
+    /* Mobile và Tablet */
+    @media (max-width: 1023px) {
+        .c-cate__inner {
+            flex-wrap: wrap;
+        }
+        .t-pay__form-list {
+            width: 74%;
+        }
+        .t-pay__footer {
+            display: none;
+        }
+    }
+    /* Tablet */
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .c-header__logo {
+            display: none;
+        }
+        .c-service {
+            padding: 22px 0;
+            height: unset;
+        }
+        .c-branch {
+            height: unset;
+            padding: 10px 0;
+        }
+        .header-bar__icon {
+            display: none;
+        }
+        .menu__overlay {
+            display: none;
+        }
+        .t-sidebar__inner {
+            width: 74%;
+        }
+    }
+    /* Mobile */
+    @media (max-width: 739px) {
+        .total__item {
+            width: 67%;
+        }
+        .total-line-table__list {
+            width: 67%;
+        }
+        .t-sidebar__inner {
+            padding: unset;
+        }
+        .t-pay__step2-heading button {
+            width: 138px;
+        }
+        .container-header {
+            display: none;
+        }
+        .c-header-overlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: none;
+            animation: fadeIn linear 0.8s;
+            z-index: 9999;
+        }
+        .menu__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 480px;
+            max-width: 100%;
+            background-color: #000;
+            overflow-y: auto;
+            z-index: 99999;
+            transform: translateX(-100%);
+            transition: transform linear 0.3s, opacity linear 0.4s;
+        }
+        .header-bar__icon {
+            font-size: 1.8rem;
+            padding: 10px 10px;
+        } 
+        .c-header-bar__input:checked ~ .menu__overlay  {
+            transform: translateX(-0%);
+        }
+        .menu__overlay {
+
+        }
+        .menu__overlay-list {
+            list-style: none;
+            padding: 0px 10px;
+        }
+        .menu__overlay-item {
+            margin: 28px 0;
+            font-size: 1.4rem;
+            padding: 10px 0;
+        }
+        .menu__overlay-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .menu__overlay-logo {
+
+        }
+        .menu__close-icon {
+            color: #fff;
+            font-size: 2.8rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .header-bar__icon {
+            display: block !important;
+        }
+        .menu__overlay {
+            display: block !important;
+        }
+        .c-service {
+            height: unset
+        }
+        .c-cate__list-1 {
+            padding: unset;
+        }
+        .c-new {
+            padding: 0 10px;
+        }
+        .c-branch {
+            height: unset;
+            padding: 0 10px;
+        }
+        .footer-pd {
+            padding: 0 10px;
+        }
+        .c-category {
+            height: unset;
+            line-height: 1.4;
+        }
+    }
